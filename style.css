@@ -10,17 +10,18 @@
     z-index: -10;
 }
 
-html, body
+html
 {
-    height: 147%;
+    height: 146%;
 }
 #footer {
     color: rga(255, 255, 255, 0.45);
-    padding: 2em 0 0 0;
     font-size: 0.75em;
+    max-width: 100%;
 }
 h1 {
     position: relative;
+    font-family: 'Baloo Bhai', cursive;
     margin-top: -15px;
     z-index: 10;
 }
@@ -40,6 +41,8 @@ img {
 .card {
     background-color: #fff7e1;
     margin: auto;
+    border: none;
+    border-radius: 20px;
 }
 .logo {
     height: 80%;
@@ -51,6 +54,7 @@ img {
     flex-shrink: none;
     color: white;
     opacity: 0.9;
+    margin: auto;
 }
 .link-button {
     top: 5%;
