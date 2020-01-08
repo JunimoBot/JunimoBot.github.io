@@ -17,100 +17,118 @@
     <script src="main.js"></script>
 </head>
 <body>
-        <div class="bg-image"></div>
-        <div style = "width:500px;height:300px;" class = "rectangle"></div>
-        <img class = "logo" src = "junimo.gif" alt = "junimo" align = "top"> 
-        <h1 align = "center"><span style="vertical-align: -350px;">Junimo</span></h1>
-        <p align = "center"><span style="vertical-align: 0px;">A Stardew Valley Discord Bot</span></p>
-       <div align = "center" class = "link-button"> <a href="https://discordapp.com/oauth2/authorize?client_id=663945047246635025&scope=bot&permissions=379968" class="btn btn-primary btn-success btn-lg active" role="button" aria-pressed="true">Invite me to your Server!</a>
-        <div align = "center" class = "link-button"> <a href="https://www.paypal.com/paypalme2/junimobot?locale.x=en_US" class="btn btn-primary btn-success btn-lg active" role="button" aria-pressed="true">Donate</a></div></div>
-
+    <div class="bg-image"></div>
+    <div id="container">
+        <div class="row">
+            <div style = "width:500px; height:300px;" class = "card text-center mt-5">
+                <img class = "logo" src = "junimo.gif" alt = "junimo" align = "top"> 
+                <h1>Junimo</h1>
+                <p align = "center">A Stardew Valley Discord Bot</p>
+            </div>
+        </div>
+        <div class="row justify-content-center align-self-center mt-5">
+            <div align = "center" class = "link-button buttonlink"> <a href="https://discordapp.com/oauth2/authorize?client_id=663945047246635025&scope=bot&permissions=379968" class="btn btn-primary btn-success btn-lg active" role="button" aria-pressed="true">Invite me to your Server!</a></div>
+        </div>
+        <div class="row justify-content-center align-self-center mt-4 mb-5" >
+            <div align = "center" class = "link-button buttonlink"> <a href="https://www.paypal.com/paypalme2/junimobot?locale.x=en_US" class="btn btn-primary btn-success btn-lg active" role="button" aria-pressed="true">Donate</a></div>
         </div>
         <div>
-      <table>
-          <thead>
-            <th>Command</th>
-            <th>Description</th> 
-            <th>Example</th>
-        </thead>
-        <tr>
-                <td class = "command">j! birthday &lt;current date&#62</td>
-                <td>Shows the next person's birthday given current date</td>
-                <td class = "example">j! birthday Summer 4</td>
-        </tr>
-        <tr class = "colored-line">
-                <td class = "command">j! build &lt;building&#62</td>
-                <td>Displays the list of items needed to construct the given building</td>
-                <td class = "example">j! build stable</td>
-            </tr>
-            <tr>
-                <td class = "command">j! bundle &lt;item&#62</td>
-                <td>Displays the bundle(s) that the given item is a requirement of.</td>
-                <td class = "example">j! bundle daffodil</td>
-        </tr>
-        <tr class = "colored-line">
-            <td class = "command">j! gift &lt;character&#62</td>
-            <td>Shows loves and likes of the given character</td>
-            <td class = "example">j! gift Shane</td>
-        </tr>
-      <tr>
-          <td class = "command">j! schedule &lt;character&#62 &lt;current date&#62</td>
-          <td>Displays the schedules for the given character</td>
-          <td class = "example">j! schedule Alex Spring 13</td>
-  </tr>
-  <tr class = "colored-line">
-      <td class = "command">j! fish &lt;fish&#62</td>
-      <td>Shows information of the specified fish</td>
-      <td class = "example">j! fish eel</td>
-  </tr>
-  <tr>
-      <td class = "command">j! season &lt;season&#62</td>
-      <td>Displays a calendar of birthdays and events of the given season</td>
-      <td class = "example">j! season Spring</td>
-</tr>
-<tr class = "colored-line">
-    <td class = "command">j! collect &lt;item&#62</td>
-    <td>Collects the item spawned given the correct item name</td>
-    <td class = "example">j! collect octopus</td>
-</tr>
-<tr>
-    <td class = "command">j! friends</td>
-    <td>Displays current friendships with in-game characters on the server</td>
-    <td class = "example">j! friends</td>
-</tr>
-<tr class = "colored-line">
-    <td class = "command">j! give &lt;character&#62</td>
-    <td>Gives an item you own to a in-game character</td>
-    <td class = "example">j! give Shane</td>
-</tr>
-<tr>
-    <td class = "command">j! items</td>
-    <td>Displays the user's current inventory of items</td>
-    <td class = "example">j! items</td>
-</tr>
-<tr class = "colored-line">
-    <td class = "command">j! give &lt;character&#62</td>
-    <td>Gives an item you own to a in-game character</td>
-    <td class = "example">j! give Shane</td>
-</tr>
-<tr>
-    <td class = "command">j! redirect &lt;channel name&#62</td>
-    <td>Redirects item spawns to a specified channel</td>
-    <td class = "example">j! redirect general</td>
-</tr>
-<tr class = "colored-line">
-    <td class = "command">j! toggle &lt;on/off&#62</td>
-    <td>Toggles item spawns on or off</td>
-    <td class = "example">j! toggle off</td>
-</tr>
-<tr>
-    <td class = "command">j! donate</td>
-    <a href = 'https://www.paypal.com/paypalme2/junimobot?locale.x=en_US'><td>Donate to help support our bot!</td></a>
-    <td class = "example">j! donate</td>
-</tr>
+          <table>
+                <thead>
+                    <th>Command</th>
+                    <th>Description</th> 
+                    <th>Example</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class = "command">j! birthday &lt;current date&#62</td>
+                        <td>Shows the next person's birthday given current date</td>
+                        <td class = "example">j! birthday Summer 4</td>
+                    </tr>
+                    <tr class = "colored-line">
+                            <td class = "command">j! build &lt;building&#62</td>
+                            <td>Displays the list of items needed to construct the given building</td>
+                            <td class = "example">j! build stable</td>
+                        </tr>
+                        <tr>
+                            <td class = "command">j! bundle &lt;item&#62</td>
+                            <td>Displays the bundle(s) that the given item is a requirement of.</td>
+                            <td class = "example">j! bundle daffodil</td>
+                    </tr>
+                    <tr class = "colored-line">
+                        <td class = "command">j! gift &lt;character&#62</td>
+                        <td>Shows loves and likes of the given character</td>
+                        <td class = "example">j! gift Shane</td>
+                    </tr>
+                    <tr>
+                    <td class = "command">j! schedule &lt;character&#62 &lt;current date&#62</td>
+                    <td>Displays the schedules for the given character</td>
+                    <td class = "example">j! schedule Alex Spring 13</td>
+                    </tr>
+                    <tr class = "colored-line">
+                        <td class = "command">j! fish &lt;fish&#62</td>
+                        <td>Shows information of the specified fish</td>
+                        <td class = "example">j! fish eel</td>
+                    </tr>
+                    <tr>
+                        <td class = "command">j! season &lt;season&#62</td>
+                        <td>Displays a calendar of birthdays and events of the given season</td>
+                        <td class = "example">j! season Spring</td>
+                    </tr>
+                    <tr class = "colored-line">
+                        <td class = "command">j! collect &lt;item&#62</td>
+                        <td>Collects the item spawned given the correct item name</td>
+                        <td class = "example">j! collect octopus</td>
+                    </tr>
+                    <tr>
+                        <td class = "command">j! friends</td>
+                        <td>Displays current friendships with in-game characters on the server</td>
+                        <td class = "example">j! friends</td>
+                    </tr>
+                    <tr class = "colored-line">
+                        <td class = "command">j! give &lt;character&#62</td>
+                        <td>Gives an item you own to a in-game character</td>
+                        <td class = "example">j! give Shane</td>
+                    </tr>
+                    <tr>
+                        <td class = "command">j! items</td>
+                        <td>Displays the user's current inventory of items</td>
+                        <td class = "example">j! items</td>
+                    </tr>
+                    <tr class = "colored-line">
+                        <td class = "command">j! give &lt;character&#62</td>
+                        <td>Gives an item you own to a in-game character</td>
+                        <td class = "example">j! give Shane</td>
+                    </tr>
+                    <tr>
+                        <td class = "command">j! redirect &lt;channel name&#62</td>
+                        <td>Redirects item spawns to a specified channel</td>
+                        <td class = "example">j! redirect general</td>
+                    </tr>
+                    <tr class = "colored-line">
+                        <td class = "command">j! toggle &lt;on/off&#62</td>
+                        <td>Toggles item spawns on or off</td>
+                        <td class = "example">j! toggle off</td>
+                    </tr>
+                    <tr>
+                        <td class = "command">j! donate</td>
+                        <a href = 'https://www.paypal.com/paypalme2/junimobot?locale.x=en_US'><td>Donate to help support our bot!</td></a>
+                        <td class = "example">j! donate</td>
+                    </tr>
+                </tbody>
+          </table>  
+        </div>
 
-      </table>  
+        <div id="footer" class="footer-copyright row mt-3 mb-4 w-75">
+        </div>
+        <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+            <div class="container text-center">
+              <small>Junimo Bot isn’t endorsed by Stardew Valley and doesn’t reflect the views or opinions of Stardew Valley or anyone officially involved in producing or managing Stardew Valley. Stardew Valley is a trademark or registered trademark of ConcernedApe LLC.
+            </small>
+            </div>
+          </footer>
     </div>
+   
 
         
         
