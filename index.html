@@ -4,34 +4,77 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Junimo Bot</title>
-     <!-- Bootstrap -->
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    <!-- CSS Code -->
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png"/>
+
+    <!-- Bootstrap -->
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Lato|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
  
     <script src="main.js"></script>
 </head>
 <body>
-    <div class="bg-image"></div>
-    <div id="container">
-        <div class="row">
-            <div style = "width:500px; height:300px;" class="card text-center mt-5">
-                <img class = "logo" src = "junimo.gif" alt = "junimo" align = "top"> 
-                <h1>Junimo</h1>
-                <p align = "center">A Stardew Valley Discord Bot</p>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">JUNIMO BOT</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto my-2 my-lg-0">
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="https://discordapp.com/oauth2/authorize?client_id=663945047246635025&scope=bot&permissions=379968" target="_blank">INVITE</span></a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="https://www.paypal.com/paypalme2/junimobot?locale.x=en_US" target="_blank">DONATE</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="https://discord.gg/m4faPsA" target="_blank">SUPPORT SERVER</a>
+              </li>
+            </ul>
+    </nav>
+
+    <div class="container-fluid" id="c1">
+        <div class="row justify-content-center">
+            <div class="text-center mt-5 junimoImage">
+                <img class = "logo rounded-circle" src = "junimo.png" alt = "junimo" align = "top"> 
+                <br>
+                <div class="intro">Junimo Bot, a Stardew Valley Bot</div>
+                <div class="mt-3">
+                    <a href="https://top.gg/bot/663945047246635025" >
+                        <img src="https://top.gg/api/widget/servers/663945047246635025.svg" alt="Junimo" />
+                    </a>
+                </div>
+                
             </div>
         </div>
-        <div class="row justify-content-center align-self-center mt-5">
-            <div align = "center" class = "link-button buttonlink"> <a href="https://discordapp.com/oauth2/authorize?client_id=663945047246635025&scope=bot&permissions=379968" class="btn btn-primary btn-success btn-lg active" role="button" aria-pressed="true">Invite me to your Server!</a></div>
+    </div>
+    <div class="container-fluid" id="c2">
+        <div class="text-center titles"><u>ABOUT</u></div>
+        <br>
+        <div class="text-center font-weight-light">
+            Junimo Bot is a Stardew Valley Bot created to provide accurate information with least amount of effort for Stardew Valley players.
+            It also provides numerous fun functionalities for Discord users to replicate Stardew Valley experience, such as item spawns, gifting villagers, and marrying villagers.
         </div>
-        <div class="row justify-content-center align-self-center mt-4 mb-5" >
-            <div align = "center" class = "link-button buttonlink"> <a href="https://www.paypal.com/paypalme2/junimobot?locale.x=en_US" class="btn btn-primary btn-success btn-lg active" role="button" aria-pressed="true">Donate</a></div>
-        </div>
+    </div>
+    <div class="container-fluid" id="c3">
+        <div class="text-center titles"><u>COMMANDS</u></div>
+        <br>
         <div>
-          <table>
+          <table class="mt-3">
                 <thead>
                     <th>Command</th>
                     <th>Description</th> 
@@ -79,15 +122,16 @@
                         <td class = "example">j! season Spring</td>
                     </tr>
                     <tr class = "colored-line">
-                        <td class = "command">j! collect &lt;item&#62</td>
-                        <td>Collects the item spawned given the correct item name</td>
-                        <td class = "example">j! collect octopus</td>
-                    </tr>
-                    <tr>
                         <td class = "command">j! bundles &lt;item&#62</td>
                         <td>Displays list of bundles and their requirements.</td>
                         <td class = "example">j! bundles</td>
                     </tr>
+                    <tr>
+                        <td class = "command">j! collect &lt;item&#62</td>
+                        <td>Collects the item spawned given the correct item name</td>
+                        <td class = "example">j! collect octopus</td>
+                    </tr>
+
                     <tr class = "colored-line">
                         <td class = "command">j! give &lt;character&#62</td>
                         <td>Gives an item you own to a in-game character</td>
@@ -104,9 +148,24 @@
                         <td class = "example">j! give Shane</td>
                     </tr>
                     <tr>
+                        <td class = "command">j! marry &lt;character&#62</td>
+                        <td>Marries the specified character (10 hearts) with a Mermaid's Pendant.</td>
+                        <td class = "example">j! marry Abigail</td>
+                    </tr>
+                    <tr class="colored-line">
+                        <td class = "command">j! divorce</td>
+                        <td>Divorces and loses all hearts with the current spouse.</td>
+                        <td class = "example">j! divorce</td>
+                    </tr>
+                    <tr>
                         <td class = "command">j! redirect &lt;channel name&#62</td>
                         <td>Redirects item spawns to a specified channel</td>
                         <td class = "example">j! redirect general</td>
+                    </tr>
+                    <tr class = "colored-line">
+                        <td class = "command">j! spawnrate &lt;number&#62</td>
+                        <td>Adjust spawn rate of item spawns between 0 and 0.1.</td>
+                        <td class = "example">j! spawnrate 0.05</td>
                     </tr>
                     <tr class = "colored-line">
                         <td class = "command">j! toggle &lt;on/off&#62</td>
@@ -129,9 +188,10 @@
 
     </div>
    
-    <footer id="sticky-footer" class="page-footer py-3 bg-dark mt-5 text-white-50">
+    <footer id="sticky-footer" class="page-footer py-3 bg-dark text-white-50">
         <div class="container text-center">
           <small>Junimo Bot isn’t endorsed by Stardew Valley and doesn’t reflect the views or opinions of Stardew Valley or anyone officially involved in producing or managing Stardew Valley. Stardew Valley is a trademark or registered trademark of ConcernedApe LLC.
+              To contact the developer, add junimo#3760 on Discord.
         </small>
         </div>
     </footer>
