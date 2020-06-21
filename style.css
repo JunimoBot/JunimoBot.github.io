@@ -38,14 +38,14 @@ html
 #c1
 {
     background: linear-gradient(to right, #4568DC, #B06AB3);
-    padding-bottom: 8vh;
+    padding-bottom: 7vh;
 }
 
 #c2
 {
     background: linear-gradient(to top right, #834d9b, #d04ed6);
     padding-top: 8vh;
-    padding-bottom: 8vh;
+    padding-bottom: 9vh;
     color: white;
     font-family: "Roboto";
     font-weight: 100;
@@ -140,11 +140,8 @@ th,tr {
 }
 
 
-.command {
+td {
     text-align: center; 
-}
-.example {
-    text-align: center;
 }
 table tr {
     font-family: 'Roboto', sans-serif;
